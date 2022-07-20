@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>
+            <!-- 데이터값을 출력 하기 위해서 변수를 지정 -->
+            <%=title %>
+        </h2>
+        <div>
+            <p>
+                <!-- 데이터를 출력 하기 위해서 객체 또는 파일을 지정 -->
+                <%-content %>
+            </p>
+        </div>
+    </header>
+</body>
+
+</html>
